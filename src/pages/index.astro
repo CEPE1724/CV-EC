@@ -1,24 +1,69 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Greeting from "../components/Greeting";
+const pageTitle = "Página de inicio";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <a href="/">Inicio</a>
-    <a href="/about/">Sobre mi</a>
-    <a href="/blog/">Blog</a>
-    <h1>Astro</h1>
-    <h1>Hola Mundo</h1>
-    <h1>Prueba de cambio</h1>
-    <h1>Prueba de cambio 2</h1>
-    <h1>Prueba de cambio 3</h1>
-    <h1>Prueba de cambio 4</h1>
-  </body>
-</html>
+
+<BaseLayout pageTitle={pageTitle}>
+  <section class="contenedor">
+    <div class="pagina-inicio">
+      <h1>EDISON</h1>
+      <h1>CEPEDA</h1>
+      <h2>DEVELOPER JR.</h2>
+    </div>
+    <div class="Iconos-about">
+      <a href="https://www.linkedin.com/in/cepeda-edison/">
+        <img src="https://img.icons8.com/color/48/000000/linkedin.png" />
+      </a>
+      <a href="https://github.com/CEPE1724">
+        <img src="https://img.icons8.com/color/48/000000/github.png" />
+      </a>  
+    </div>
+  </section>
+  <section >
+    <div class="pagina-inicio">
+      <h1>EDISON</h1>
+      <h1>CEPEDA</h1>
+      <h2>DEVELOPER JR.</h2>
+    </div>
+    <div class="Iconos-about">
+      <a href="https://www.linkedin.com/in/cepeda-edison/">
+        <img src="https://img.icons8.com/color/48/000000/linkedin.png" />
+      </a>
+      <a href="https://github.com/CEPE1724">
+        <img src="https://img.icons8.com/color/48/000000/github.png" />
+      </a>  
+    </div>
+  </section>
+  <section >
+    <div class="pagina-inicio">
+      <h1>EDISON</h1>
+      <h1>CEPEDA</h1>
+      <h2>DEVELOPER JR.</h2>
+    </div>
+    <div class="Iconos-about">
+      <a href="https://www.linkedin.com/in/cepeda-edison/">
+        <img src="https://img.icons8.com/color/48/000000/linkedin.png" />
+      </a>
+      <a href="https://github.com/CEPE1724">
+        <img src="https://img.icons8.com/color/48/000000/github.png" />
+      </a>  
+    </div>
+  </section>
+  <section >
+    <div class="pagina-inicio">
+      <h1>EDISON</h1>
+      <h1>CEPEDA</h1>
+      <h2>DEVELOPER JR.</h2>
+    </div>
+    <div class="Iconos-about">
+      <a href="https://www.linkedin.com/in/cepeda-edison/">
+        <img src="https://img.icons8.com/color/48/000000/linkedin.png" />
+      </a>
+      <a href="https://github.com/CEPE1724">
+        <img src="https://img.icons8.com/color/48/000000/github.png" />
+      </a>  
+    </div>
+  </section>
+</BaseLayout>

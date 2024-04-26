@@ -1,0 +1,162 @@
+/* Estilos generales */
+html {
+  background-color: #f1f5f9;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+/* Estilos de la barra de navegación */
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
+}
+
+.contenedor {
+  background-image: url('../img/Portada.jpeg'); 
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  color: white;
+  width: 100%;
+  position: relative; /* Cambia el posicionamiento a relativo */
+  z-index: 0; /* Ajusta el z-index para que esté detrás de otros elementos */
+}
+
+
+footer {
+
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Asegura que el footer esté por encima de los demás elementos */
+}
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #ff9776;
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.0rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: #ff9776;
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Modo oscuro */
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
+/* Estilos de la página de inicio */
+.pagina-inicio {
+  display: flex;
+  flex-grow: 8;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.pagina-inicio h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  margin: 0;
+  padding: 10px;
+}
+
+.pagina-inicio h2 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 10px;
+  color: #0b3a0b;
+}
+
+/* Estilos de los iconos */
+.Iconos-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 100%;
+}
+
+.Iconos-about img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
